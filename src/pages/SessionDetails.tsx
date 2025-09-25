@@ -5,7 +5,7 @@ import NotFound from "./NotFound";
 interface SessionDetailsProps { sessions: StudySession[]; }
 
 export default function SessionDetails({ sessions }: SessionDetailsProps) {
-  const { id } = useParams<{ id: string }>(); // Hook para ler parâmetros da rota [cite: 44]
+  const { id } = useParams<{ id: string }>();
   const session = sessions.find(s => s.id === id);
 
   if (!session) { return <NotFound />; }
