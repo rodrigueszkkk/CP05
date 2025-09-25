@@ -1,5 +1,5 @@
 
-import { StudyCard } from "../components/StudyCard";
+import { StudyCard } from "../components/StudyCards";
 import type { StudySession } from "../types";
 
 
