@@ -1,6 +1,6 @@
 // src/components/StudyCard.tsx
 import { Link } from "react-router-dom";
-import { StudySession } from "../types";
+import type { StudySession } from "../types";
 
 // As props são tipadas [cite: 13, 67]
 interface StudyCardProps {

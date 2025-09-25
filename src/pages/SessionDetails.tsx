@@ -1,6 +1,7 @@
 // src/pages/SessionDetails.tsx
 import { useParams, Link } from "react-router-dom";
-import { StudySession } from "../types";
+import type { StudySession } from "../types";
+import NotFound from "./NotFound";
 
 interface SessionDetailsProps { sessions: StudySession[]; }
 
