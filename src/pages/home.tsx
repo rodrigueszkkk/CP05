@@ -1,8 +1,8 @@
-// src/pages/Home.tsx
-import { StudyCard } from "../components/StudyCard";
-import { StudySession } from "../types";
 
-// As props do componente são tipadas [cite: 13, 60, 67]
+import { StudyCard } from "../components/StudyCard";
+import type { StudySession } from "../types";
+
+
 interface HomeProps {
   sessions: StudySession[];
   stats: {
