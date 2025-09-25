@@ -1,10 +1,4 @@
-# Projeto Global Solution
-
-<p align="center">
-  <img alt="Linguagem Principal" src="https://img.shields.io/github/languages/top/[SEU_USUARIO]/[SEU_REPOSITORIO]">
-  <img alt="Licença" src="https://img.shields.io/github/license/[SEU_USUARIO]/[SEU_REPOSITORIO]">
-  <img alt="Data da Última Atualização" src="https://img.shields.io/github/last-commit/[SEU_USUARIO]/[SEU_REPOSITORIO]">
-</p>
+# Projeto StudyLog
 
 <p align="center">
   Aplicação web desenvolvida focada no gerenciamento e acompanhamento de sessões de estudo.
