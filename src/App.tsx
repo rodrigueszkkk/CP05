@@ -3,7 +3,7 @@ import { useState, useMemo, useCallback, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 
-import type { StudySession } from "./types";
+import type { StudySession } from "./types/types";
 import { Layout } from "./components/layout";
 import { Loading } from "./components/Loading";
 import { ErrorFallback } from "./components/ErrorFallback";
@@ -48,8 +48,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home sessions={sessions} stats={stats} />} />
-            <Route path="add" element={<NewSession onAddSession={handleAddSession} />} />
-            <Route path="session/:id" element={<SessionDetails sessions={sessions} />} />
+            <Route path="/add" element={<NewSession onAddSession={handleAddSession} />} />
+            <Route path="/session/:id" element={<SessionDetails sessions={sessions} />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

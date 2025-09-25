@@ -15,12 +15,8 @@ export function Header() {
 
         <nav className="flex items-center gap-2">
           <NavLink to="/" className={linkClass}>Home</NavLink>
-          <NavLink
-            to="/add"
-            className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700"
-          >
-            + Adicionar
-          </NavLink>
+          <NavLink to="/add" className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700"
+>+ Adicionar</NavLink>
         </nav>
       </div>
     </header>
