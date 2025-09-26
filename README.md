@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# Projeto StudyLog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  Aplicação web desenvolvida focada no gerenciamento e acompanhamento de sessões de estudo.
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-funcionalidades-e-páginas">Funcionalidades</a> •
+  <a href="#-como-executar">Como Executar</a> •
+  <a href="#-tecnologias-utilizadas">Tecnologias</a> •
+  <a href="#-deploy">Deploy</a> •
+  <a href="#-equipe">Equipe</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Sobre o Projeto
 
-## React Compiler
+Este projeto consiste em uma interface interativa para que usuários possam criar, visualizar e gerenciar suas sessões de estudo. A aplicação foi construída com foco em boas práticas de desenvolvimento React, incluindo otimização de performance e tratamento de erros.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Funcionalidades e Páginas
 
-## Expanding the ESLint configuration
+O projeto atualmente possui as seguintes páginas e funcionalidades:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **`/` (Home):** Página inicial que exibe um resumo e a lista de todas as sessões de estudo.
+* **`/add` (NewSession):** Página com um formulário para adicionar uma nova sessão de estudos.
+* **`/session/:id` (SessionDetails):** Página para visualizar os detalhes completos de uma sessão específica.
+* **`*` (NotFound):** Página de erro 404, exibida quando uma rota não é encontrada.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Como Executar
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Para configurar e executar o projeto em sua máquina local, siga os passos abaixo.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Pré-requisitos:**
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Instalação e Execução:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+    A aplicação estará disponível em `http://localhost:5173` (ou na porta indicada no terminal).
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído com um ecossistema moderno de desenvolvimento front-end:
+
+* **Framework Principal:**
+    * **React:** Biblioteca para construção de interfaces de usuário.
+    * **TypeScript:** Para adicionar tipagem estática e segurança ao código.
+
+* **Roteamento:**
+    * **React Router DOM:** Para gerenciar a navegação e as rotas da aplicação de forma declarativa.
+
+* **Otimização de Performance:**
+    * **Code Splitting (`lazy` e `Suspense`):** As páginas são carregadas sob demanda para diminuir o tempo de carregamento inicial.
+    * **Hooks de Otimização (`useMemo` e `useCallback`):** Implementados no arquivo `App.tsx` para evitar renderizações desnecessárias e recálculos custosos.
+
+* **Tratamento de Erros:**
+    * **React Error Boundary:** Utilizado para capturar erros na árvore de componentes e exibir uma interface de fallback, melhorando a robustez da aplicação.
+
+## 🔗 Deploy
+
+O projeto está hospedado na Vercel e pode ser acessado através do link abaixo:
+
+**[Acesse a versão de produção aqui](https://studylog-8wjzw2530-rodrigueszkkks-projects.vercel.app?_vercel_share=uYgBwRtK6rJQx6x66ZNZ7OAnPQI4Mmtx)**
+
+## 👥 Equipe e Responsabilidades
+
+Abaixo está a divisão de tarefas entre os membros da equipe:
+
+| Nome    | Responsabilidades                                                                                                                         |
+| :------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| Gabriel/https://github.com/GabSolano | Implementação do Tailwind CSS, criação do header, study cards e desenvolvimento das páginas: `NewSession`, `NotFound`, `SessionDetails` e `Home`. |
+| Leandro/https://github.com/LeandroGuaridoOliveira | Desenvolvimento dos componentes `ErrorFallback`, `Loading`, `Footer`, e estruturação do layout principal no arquivo `App.tsx`.            |
+| Kaiky/https://github.com/rodrigueszkkk   | Criação da estrutura inicial do projeto, deploy na Vercel, correções de bugs gerais (fix bugs) e ajustes no layout e nos study cards.      |

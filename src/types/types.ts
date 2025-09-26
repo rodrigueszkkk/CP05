@@ -4,5 +4,6 @@ export interface StudySession {
   minutes: number;
   date: string; 
   notes?: string; 
+   imageUrl?: string;
  }
   
