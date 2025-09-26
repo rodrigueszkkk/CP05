@@ -69,7 +69,7 @@ Este projeto foi construído com um ecossistema moderno de desenvolvimento front
 
 O projeto está hospedado na Vercel e pode ser acessado através do link abaixo:
 
-**[Acesse a versão de produção aqui](https://studylog-8wjzw2530-rodrigueszkkks-projects.vercel.app?_vercel_share=uYgBwRtK6rJQx6x66ZNZ7OAnPQI4Mmtx)**
+**[Acesse a versão de produção aqui](https://studylog-delta.vercel.app/)**
 
 ## 👥 Equipe e Responsabilidades
 
