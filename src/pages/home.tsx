@@ -16,10 +16,10 @@ export default function Home({ sessions, stats }: HomeProps) {
   return (
     <div className="text-white">
       <section className="bg-gray-800 p-6 rounded-lg mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-center">Estatísticas Gerais</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center">Estatísticas</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-          <div className="bg-gray-700 p-4 rounded"><p className="text-3xl font-bold">{stats.totalSessions}</p><p>Sessões Totais</p></div>
-          <div className="bg-gray-700 p-4 rounded"><p className="text-3xl font-bold">{stats.totalMinutes}</p><p>Minutos Totais</p></div>
+          <div className="bg-gray-700 p-4 rounded"><p className="text-3xl font-bold">{stats.totalSessions}</p><p>Total de sessões</p></div>
+          <div className="bg-gray-700 p-4 rounded"><p className="text-3xl font-bold">{stats.totalMinutes}</p><p>Tempo total em minutos</p></div>
           <div className="bg-gray-700 p-4 rounded"><p className="text-3xl font-bold">{stats.averageMinutes}</p><p>Média de Minutos</p></div>
         </div>
       </section>
