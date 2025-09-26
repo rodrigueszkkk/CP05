@@ -17,17 +17,11 @@ export default function App() {
   const [sessions, setSessions] = useState<StudySession[]>([
     {
       id: "1",
-      subject: "React com TypeScript",
+      subject: "Curso de desenhar Caricaturas",
       minutes: 60,
       date: "2025-09-25",
-      notes: "Revisão de Hooks e Props tipadas.",
-    },
-    {
-      id: "2",
-      subject: "TailwindCSS",
-      minutes: 45,
-      date: "2025-09-24",
-      notes: "Estudando design responsivo.",
+      notes:"curso com o melhor profissional do mercado @Thisiswalace",
+      imageUrl: "https://i.pinimg.com/474x/65/be/b3/65beb3308af25b68fb9fc54e35f28f4b.jpg"
     },
   ]);
 
